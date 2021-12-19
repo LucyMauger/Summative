@@ -1,0 +1,55 @@
+body {
+  padding-top: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(240, 240, 240);
+}
+.header-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://i.pinimg.com/originals/87/fa/80/87fa80bff6210727841d27eba5023eab.jpg);
+  min-height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.header-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+h1 {
+  font-size: 70px;
+  font-weight: bolder;
+}
+.designer-img {
+  border-radius: 50px;
+  max-height: 500px;
+  padding: 30px;
+}
+.section-bg-light {
+  background-color: rgb(212, 197, 198);
+}
+.section-bg-dark {
+  background-color: rgb(77, 64, 65);
+}
+.text-stand-out-light {
+  font-weight: bold;
+  color: rgb(187, 167, 169);
+}
+.text-stand-out-dark {
+  font-weight: bold;
+  color: rgb(77, 64, 65);
+}
+.video-formatting {
+  min-height: 315px;
+  max-width: 560px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+.input-box {
+  max-width: 300px;
+}

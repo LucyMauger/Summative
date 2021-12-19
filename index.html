@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    
+    <link rel="stylesheet" href="style.css">
+
+    <title>Influential Fashion Designers</title>
+    <script>
+      function newsletter(){
+        email=document.getElementById("newsletterEmail").value;
+        console.log(email);
+        document.getElementById("newsletterEmail").value=null;
+      }
+      function newDesigner(){
+        newDesigner=document.getElementById("newDesigner").value;
+        console.log(newDesigner);
+        document.getElementById("newDesigner").value=null;
+      }
+    </script>
+  </head>
+
+  <body>
+    <!--NAVBAR (using Bootsrtrap navbar)-->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <a class="navbar-brand" href="#">INFLUENTIAL FASHION DESIGNERS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#websiteNavbar" aria-controls="websiteNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse" id="websiteNavbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#CDior">Christian Dior</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#CChanel">Coco Chanel</a>
+                </li>
+              </ul>
+          </div>
+        </nav>
+      </header>
+
+    <!--HEADER-->
+      <div class="container-fluid header-image">
+        <div class="container header-text text-center text-light p-4">
+          <h1>INFLUENTIAL FASHION DESIGNERS</h1>
+          <h5>Find out about some of the most influential fashion designers that have shaped today's fashion industry.</h5>
+        </div>
+      </div>
+
+    <!--INTRODUCTION-->
+      <div class="container-fluid text-light bg-dark p-5 text-center">
+        <h2 class="p-2">INTRODUCTION</h2>
+        <p>A fashion designer is responsible for creating the specific look of individual garments-including a garment's shape, color, fabric, trimmings, and other aspects of the whole. The fashion designer begins with an idea of how a garment should look, turns that idea into a design (such as a sketch), and specifies how that design should be made into an actual piece of clothing by other workers (from patternmakers to finishers). The category of fashion designer includes people at different levels of the fashion business, from well-known couturiers, to anonymous designers working for commercial ready-to-wear houses, to stylists who might make only small modifications in existing designs. Fashion designers hold a special place in the world. Their talent and vision not only play a major role in how people look, but they have also made important contributions to the cultural and social environment.</p>
+        <a href="https://fashion-history.lovetoknow.com/fashion-clothing-industry/what-is-fashion-designer" class="btn btn-outline-light btn-md">Quoted from LovetoKnow</a>
+        <div class="container-fluid align-items-center justify-content text-center">
+          <div class="p-4 video-formatting">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/EQo3onb8kSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+    <!--GRAPH TEST-->
+      <canvas id="myChart"></canvas>
+
+    <!--CHRISTIAN DIOR-->
+      <!--Title and Buttons-->
+      <section id="CDior" class="p-5">
+        <div class="container-fluid section-bg-dark text-light">
+          <div>
+            <h1 class="text-center p-2">CHRISTIAN DIOR</h1>
+            <div class="text-center">
+              <a role="button" href="#CDior-About" class="btn btn-outline-light btn-sm">About</a>
+              <a role="button" href="#CDior-Video" class="btn btn-outline-light btn-sm">Video</a>
+              <a role="button" href="#CDior-Collections" class="btn btn-outline-light btn-sm">Collections</a>
+            </div>
+
+            <!--About-->
+            <div class="container-fluid" id="CDior-About">
+              <div class="row">
+                <div class="col-md text-justify p-5">
+                  <blockquote class="blockquote">
+                    <p><em>"<span class="text-stand-out-light">Simplicity</span>, <span class="text-stand-out-light">good taste</span>, and <span class="text-stand-out-light">grooming</span> are the three fundamentals of good dressing and these do not cost money."</em></p>
+                    <footer class="blockquote-footer text-light"><em>Christian Dior</em></footer>
+                  </blockquote>
+                  <p>
+                    In 1947, backed by French entrepreneur Marcel Boussac, Dior introduced the revolutionary New Look, spurring international controversy over its radically lowered hemline. The look featured small shoulders, a cinched waist, and a voluminous skirt—a drastic change from the World War II look of padded shoulders and short skirts. The overnight sensation of the New Look was followed by 10 years of outstanding success. In the 1950s, Dior introduced a variety of new silhouettes, including the H-line, the A-line, and the Y-line. Dior was instrumental in commercializing Parisian fashion on a worldwide basis and in regaining for Parisian couturiers the ground that had temporarily been lost to American designers. Upon Dior’s death in 1957, his assistant Yves Saint Laurent took over the couture house. Saint Laurent held this position until 1960, when he was drafted into the French army. Subsequent creative directors at the House of Dior have included Marc Bohan, Gianfranco Ferré, and John Galliano.                  </p>
+                  <a href="https://www.britannica.com/biography/Christian-Dior-French-designer" class="btn btn-outline-light btn-sm">Quoted from Britanica</a>
+                </div>
+                <div class="col-md align-items-center">
+                  <img src="https://cdn.lifestyleasia.com/wp-content/uploads/sites/2/2020/04/23190635/dior-hero2-1567x900.jpg" class="img-fluid designer-img" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Video and Accordian (using Bootsrtrap accordian)-->
+        <div class="container-fluid bg-light text-light" id="CDior-Video"></div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md ">
+                <div class="tab-content">
+                  <div class="row align-items-center justify-content-between p-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/eYjE48Pj8fg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md ">
+                <h2 class="text-dark text-center p-3">DIOR'S INFLUENCE</h2>
+                <div class="accordion" id="CDiorAccordion">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="CDiorA1">
+                      <button class="accordion-button collapsed font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#CDiorC1" aria-expanded="false" aria-controls="CDiorC1">
+                        The "New Look"
+                      </button>
+                    </h2>
+                    <div id="CDiorC1" class="accordion-collapse collapse" aria-labelledby="CDiorA1" data-bs-parent="#CDiorAccordion">
+                      <div class="accordion-body text-dark">
+                        It was in February 1947 when Christian Dior launched his eponymous brand with a collection of swirling full skirts and nipped-in waists with fitted jackets. Legend has it that Carmel Snow, Bazaar's editor-in-chief, was the first to rush backstage to congratulate Monsieur Dior. Indeed, it was Snow who came up with the phrase that was to make her protégé famous: "Your dresses have such a new look." This "new look" was acclaimed the world over, introducing a sweeping departure from postwar austerity and revolutionising the feminine silhouette.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="CDiorA2">
+                      <button class="accordion-button collapsed font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#CDiorC2" aria-expanded="false" aria-controls="CDiorC2">
+                        Ready-to-Wear Market
+                      </button>
+                    </h2>
+                    <div id="CDiorC2" class="accordion-collapse collapse" aria-labelledby="CDiorA2" data-bs-parent="#CDiorAccordion">
+                      <div class="accordion-body text-dark">
+                        In 1948, Christian Dior New York brought his products to the ready-to-wear market using fabrics that worked well for machine production and incorporated America's taste for more casual styles. Wholesale fashion companies were able to purchase Dior designs and produce them for the mass market. Dior also received royalties for each garment. In 1950, Dior earned half the profits of the entire Parisian couture industry. By 1957, Maison Christian Dior offered licensing in 87 countries that offered Dior's label on stockings, handbags, make-up, and perfumes.                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-center p-4">
+                  <a href="https://bellatory.com/fashion-industry/Fashion-HIstory-The-Importance-of-Christian-Dior" class="btn btn-outline-dark btn-md">Information Quoted from Bellatory</a>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+
+        <!--Image Cards with Description and Buttons (using Bootsrtrap image cards)-->
+        <div class="container-fluid section-bg-dark text-light p-5" id="CDior-Collections">
+          <h2 class="text-center p-4">COLLECTIONS BY HOUSE OF DIOR</h2>          
+          <div class="row">
+            <div class="col-md ">
+              <div class="card text-center" style="width: 18rem;">
+                <img src="https://hips.hearstapps.com/hbz.h-cdn.co/assets/15/04/1947-104402596.jpg?crop=1.0xw:1xh;center,top&resize=480:*" class="card-img-top" alt="">
+                <div class="card-body">
+                  <p class="card-text text-dark">The silouhette of this collection has become a trademark of Dior today and is still influencing new collections, such as through their more modern, loose-fitting jackets or even in more masculine pieces.</p>
+                  <a href="https://artsandculture.google.com/exhibit/christian-dior-the-new-look-the-metropolitan-museum-of-art/cQKikHJ-Ok8UIg?hl=en" class="btn btn-outline-dark btn-md">The New Look (1947)</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md ">
+              <div class="card text-center" style="width: 18rem;">
+                <img src="https://assets.vogue.com/photos/55d78b35ffaf5abf26397b2b/master/w_1920,c_limit/CHRISTIAN-DIOR-SPRING-1998-HC-34.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <p class="card-text text-dark">Designed by John Galliano, the spring 1998 collection took inspiration from Marchesa Casati and used bold patterned fabrics and silhouettes throughout the garments.</p>
+                  <a href="https://www.vogue.com/fashion-shows/spring-1998-couture/christian-dior" class="btn btn-outline-dark btn-md">Spring 1998 Couture</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md ">
+              <div class="card text-center" style="width: 18rem;">
+                <img src="https://assets.vogue.com/photos/55c6516e08298d8be221727b/master/w_1920,c_limit/00010m.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <p class="card-text text-dark">Also designed by John Galliano, the 2006 collection played off of combining many different fantasy-like concepts. He used unique silhouettes combining dresses and armour as well as bright colours.</p>
+                  <a href="https://www.vogue.com/fashion-shows/fall-2006-couture/christian-dior" class="btn btn-outline-dark btn-md">Fall 2006 Couture</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md ">
+              <div class="card text-center" style="width: 18rem;">
+                <img src="https://assets.vogue.com/photos/5a9567d40bb59c445d4db7e1/master/w_2560%2Cc_limit/_DIO0047.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <p class="card-text text-dark">Maria Grazia Chiuri designed the fall 2018 collection after discovering a photograph of woment protesting that there were not enough miniskirts inside the Dior store.</p>
+                  <a href="https://www.vogue.com/fashion-shows/fall-2018-ready-to-wear/christian-dior" class="btn btn-outline-dark btn-md">Fall 1018 Ready-to-Wear</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!--COCO CHANEL-->
+      <!--Title and Buttons-->
+      <section id="CChanel" class="p-5">
+        <div class="container-fluid section-bg-light text-dark">
+          <div>
+            <h1 class="text-center p-2">COCO CHANEL</h1>
+            <div class="text-center">
+              <a role="button" href="#CChanel-About" class="btn btn-outline-dark btn-sm">About</a>
+              <a role="button" href="#CChanel-Video" class="btn btn-outline-dark btn-sm">Video</a>
+              <a role="button" href="#CChanel-Collections" class="btn btn-outline-dark btn-sm">Collections</a>
+            </div>
+
+            <!--About-->
+            <div class="container-fluid" id="CChanel-About">
+              <div class="row">
+                <div class="col-md text-justify p-5">
+                  <blockquote class="blockquote">
+                    <p><em>"A woman is closest to being <span class="text-stand-out-dark">naked</span> when she is <span class="text-stand-out-dark">well dressed</span>."</em></p>
+                    <footer class="blockquote-footer text-dark"><em>Coco Chanel</em></footer>
+                  </blockquote>
+                  <p>
+                    Coco Chanel, byname of Gabrielle Bonheur Chanel, (born August 19, 1883, Saumur, France—died January 10, 1971, Paris), French fashion designer who ruled Parisian haute couture for almost six decades. Her elegantly casual designs inspired women of fashion to abandon the complicated, uncomfortable clothes—such as petticoats and corsets—that were prevalent in 19th-century dress. Among her now-classic innovations were the Chanel suit, the quilted purse, costume jewelry, and the “little black dress.”</p>
+                  <a href="https://www.britannica.com/biography/Coco-Chanel" class="btn btn-outline-dark btn-sm">Quoted from Britanica</a>
+                </div>
+                <div class="col-md align-items-center">
+                  <img src="https://cdn5.iguzzini.com/getmedia/da633ba2-10e2-43f2-9694-92a6b044346f/chanel" class="img-fluid designer-img" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Video and Accordian (using Bootsrtrap accordian)-->
+        <div class="container-fluid bg-light text-dark" id="CChanel-Video"></div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md ">
+                <div class="tab-content">
+                  <div class="row align-items-center justify-content-between p-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/AKZ6lu37jik" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md ">
+                <h2 class="text-dark text-center p-3">CHANEL'S INFLUENCE</h2>
+                <div class="accordion" id="CChanelAccordion">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="CChanelA1">
+                      <button class="accordion-button collapsed font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#CChanelC1" aria-expanded="false" aria-controls="CChanelC1">
+                        Women's Trousers
+                      </button>
+                    </h2>
+                    <div id="CChanelC1" class="accordion-collapse collapse" aria-labelledby="CChanelA1" data-bs-parent="#CChanelAccordion">
+                      <div class="accordion-body text-dark">
+                        Chanel didn't invent women's pants -- they had already entered wardrobes during World War I, when women started taking jobs traditionally carried out by men. But she undeniably popularized them as a fashion garment. The designer liked wearing pants herself (she often borrowed them from her male lovers), and, as early as 1918, began sporting flowy "beach pajamas" while vacationing on the French Riviera. Drawing inspiration from the straight, wide cuts of sailor's pants, giving them a loose, comfortable shape, she matched them with oversized shirts or sleeveless tops. The garment considered risqué at the time, due to pajamas' association with the bedroom, but by the mid-1920s it become a staple among wealthy ladies and a fixture of Chanel's collections.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="CChanelA2">
+                      <button class="accordion-button collapsed font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#CChanelC2" aria-expanded="false" aria-controls="CChanelC2">
+                        Nautical Tops
+                      </button>
+                    </h2>
+                    <div id="CChanelC2" class="accordion-collapse collapse" aria-labelledby="CChanelA2" data-bs-parent="#CChanelAccordion">
+                      <div class="accordion-body text-dark">
+                        French sailors and fishermen had been sporting Breton tops -- striped sweaters made from tightly knit wool to protect them from the elements -- since the 19th century. Chanel, however, turned them into fashion. Striped pieces appeared in her boutique in the society resort of Deauville, Normandy, in the 1910s. She reworked them in jersey, giving them patch pockets and accessorizing them with thick belts. The nautical look was casual, and far less serious than the stiff aesthetic of the Belle Époque, quickly becoming a hit among stylish women both on and off the beach. Soon enough, Breton stripes could be found in the pages of both British and American Vogue. And even today, chances are you have some in your closet.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="CChanelA3">
+                      <button class="accordion-button collapsed font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#CChanelC3" aria-expanded="false" aria-controls="CChanelC3">
+                        The Little Black Dress
+                      </button>
+                    </h2>
+                    <div id="CChanelC3" class="accordion-collapse collapse" aria-labelledby="CChanelA3" data-bs-parent="#CChanelAccordion">
+                      <div class="accordion-body text-dark">
+                        In 1926, Vogue published a drawing of a simple, calf-length black dress fashioned from crêpe de Chine. It featured long narrow sleeves and a low waist, and was adorned with a string of pearls. The magazine described it as "Chanel's Ford," referring to the at-the-time wildly popular Model T. In other words, it was a garment so simple it could be accessible to any shopper -- "a sort of uniform for all women of taste," as the publication put it. The ensemble was dubbed the "little black dress," and the rest is history. During the Great Depression, the LBD became the outfit of choice for an entire generation of female consumers, and, in later decades, an essential part of women's wardrobes everywhere. Countless iterations and imitations have followed, but the understated elegance of Chanel's original number remains unmatched.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="CChanelA4">
+                      <button class="accordion-button collapsed font-weight-bold" type="button" data-bs-toggle="collapse" data-bs-target="#CChanelC4" aria-expanded="false" aria-controls="CChanelC4">
+                        The Chanel Suit
+                      </button>
+                    </h2>
+                    <div id="CChanelC4" class="accordion-collapse collapse" aria-labelledby="CChanelA4" data-bs-parent="#CChanelAccordion">
+                      <div class="accordion-body text-dark">
+                        The Chanel suit was a game-changer -- not just for fashion but for women's sartorial liberation. Coco Chanel introduced her first two-piece set in the 1920s, inspired by menswear and sportswear, as well as the suits of her then lover, the Duke of Westminster. Keen to free women from the restrictive corsets and long skirts of previous decades, Chanel crafted a slim skirt and collarless jacket made of tweed, a fabric then considered markedly unglamorous. The suit was modern, slightly masculine in its cut, and ideal for the post-war woman making her first foray in the business world. Its popularity continued through the years, and featured across collections from the house of Chanel, including those by Karl Lagerfeld. Some of the most influential women of all time wore the Chanel suit, too, from Audrey Hepburn and Grace Kelly to Brigitte Bardot and Princess Diana.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-center p-4">
+                  <a href="https://edition.cnn.com/style/article/coco-chanel-fashion-50-years/index.html" class="btn btn-outline-dark btn-md">Information Quoted from CNN</a>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+
+        <!--Image Cards with Description and Buttons (using Bootsrtrap image cards)-->
+        <div class="container-fluid section-bg-light text-dark p-5" id="CChanel-Collections">
+          <h2 class="text-center p-4">COLLECTIONS BY HOUSE OF CHANEL</h2>          
+          <div class="row">
+            <div class="col-md ">
+              <div class="card text-center" style="width: 18rem;">
+                <img src="https://assets.vogue.com/photos/5df3cc58da663b00098d938e/master/w_1920,c_limit/001-chanel-spring-1992-ready-to-wear-CN10011870-linda-evangelista.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <p class="card-text text-dark">Karl Lagerfeld was inspired by Chanel's love of mens clothes in mind by mixing masculine clothing with bold coloured skirt-suits.</p>
+                  <a href="https://www.vogue.com/fashion-shows/spring-1992-ready-to-wear/chanel" class="btn btn-outline-dark btn-md">Spring 1992 Ready-to-Wear</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md ">
+              <div class="card text-center" style="width: 18rem;">
+                <img src="https://assets.vogue.com/photos/55c6515b08298d8be220138e/master/w_1920,c_limit/100089253.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <p class="card-text text-dark">In this collection, Karl Lagerfeld reimagined the Chanel suit with "fragility" in mind, using dainty silhouettes, colours and jewellery.</p>
+                  <a href="https://www.vogue.com/fashion-shows/spring-2003-couture/chanel" class="btn btn-outline-dark btn-md">Spring 2003 Couture</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md ">
+              <div class="card text-center" style="width: 18rem;">
+                <img src="https://assets.vogue.com/photos/5c7e49e25f91f02d6b73adae/master/w_1920,c_limit/_ALE0072.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <p class="card-text text-dark">Karl Lagerfeld's final collection with Chanel was full of suits created out of checked tweed patterns and wide leg trousers or skirts.</p>
+                  <a href="https://www.vogue.com/fashion-shows/fall-2019-ready-to-wear/chanel" class="btn btn-outline-dark btn-md">Fall 2019 Ready-to-Wear</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md ">
+              <div class="card text-center" style="width: 18rem;">
+                <img src="https://assets.vogue.com/photos/5f043eb9e9033a4e3ebd603f/master/w_1920,c_limit/00001-CHANEL-COUTURE-FALL-20-Credit-Mikael-Jansson.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <p class="card-text text-dark">Virginie Viard designed this collection with "eccentric girls" in mind. She took insporation from Chanel's schoolgirl uniform designs.</p>
+                  <a href="https://www.vogue.com/fashion-shows/fall-2020-couture/chanel" class="btn btn-outline-dark btn-md">Fall 2020 Couture</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!--NEWSLETTER-->
+    <section class="newsletter">
+      <div class="container-fluid text-center text-light bg-dark">
+        <div class="row">
+          <div class="col-sm-12 p-4">
+            <h2>Would you like to stay updated?</h2>
+            <h5>Enter your email below to sign up for our newsletter and be notified when new desigers are added.</h5>
+            <div class="container-fluid text-center input-group mb-3 d-flex justify-content-center align-content-center p-5">
+              <input type="text" class="form-control input-box" placeholder="Email" aria-label="Email" aria-describedby="basic-addon2" id="newsletterEmail">
+              <div class="input-group-append text-center">
+                <button onclick="newsletter()" class="btn btn-outline-light text-center" type="button">Subscribe</button>
+              </div>
+            </div>
+            <p>(Your input will be displayed in the console)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--MISSING DESIGNER FORM-->
+    <section class="newsletter">
+      <div class="container-fluid text-center text-dark">
+        <div class="row">
+          <div class="col-sm-12 p-4">
+            <h2>Missing someone?</h2>
+            <h5>Let us know below and we'll do our best to add them!</h5>
+            <div class="container-fluid text-center input-group mb-3 d-flex justify-content-center align-content-center p-5">
+              <input type="text" class="form-control input-box" placeholder="Designer name" aria-label="Designer name" aria-describedby="basic-addon2" id="newDesigner">
+              <div class="input-group-append text-center">
+                <button onclick="newDesigner()" class="btn btn-outline-dark text-center" type="button">Submit</button>
+              </div>
+            </div>
+            <p>(Your input will be displayed in the console)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--FOOTER-->
+    <div class="container-fluid bg-dark">
+        <div class="container text-center text-light p-4">
+          <h5>Website Created by Lucy Mauger</h5>
+          <p>All links to sources for text are included as buttons.</p>
+        </div>
+      </div>
+    
+    <!--BOOTSTRAP JAVASCRIPT TAG-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  </body>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script type="text/javascript" src="Chart.js"></script>
+    <script type="text/javascript" src="xlsx.full.min.js"></script>
+    <script type="text/javascript" src="chartjs-plugin-datasource.js"></script>
+    <script src="index.js"></script>
+
+  </html>
