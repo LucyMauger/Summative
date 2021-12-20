@@ -52,12 +52,6 @@ d3.csv("GoogleTrendsComparingDesigners.csv").then(function(datapoints){
     }]
   };
 
-  const config = {
-    type: 'line',
-    data: data,
-    options: {}
-  };
-
   const genericOptions = {
     fill: false,
     interaction: {
@@ -66,8 +60,59 @@ d3.csv("GoogleTrendsComparingDesigners.csv").then(function(datapoints){
     radius: 0,
   };
 
+  const config = {
+    type: 'line',
+    data: data,
+    options: genericOptions
+  };
+
   const myChart = new Chart(
-    document.getElementById('myChart'),
+    document.getElementById('GoogleChart'),
+    config
+  );
+
+});
+
+d3.csv("LeadingBrands2021.csv").then(function(datapoints){
+  datapoints.forEach(d => {d.H=+d.Height;});
+
+  const Brand = [];
+  const Value = [];
+
+  for (i = 0; i < datapoints.length; i++) {
+    Brand.push(datapoints[i].Brand)
+    Value.push(datapoints[i].Value)
+  }
+
+  const labels = Brand;
+  const data = {
+    labels: labels,
+    datasets: [{
+      backgroundColor: 'rgb(116, 46, 53)',
+      borderColor: 'rgb(116, 46, 53)',
+      data: Value,
+    }]
+  };
+
+  const config = {
+    type: 'bar',
+    data: data,
+    options: {
+      responsive: true,
+      plugins: {
+        legend: {
+          position: 'top',
+        },
+        title: {
+          display: true,
+          text: 'Leading Apparel Brands of 2021'
+        }
+      }
+    },
+  };
+
+  const myChart = new Chart(
+    document.getElementById('BrandValueGraph'),
     config
   );
 
@@ -82,8 +127,4 @@ function newDesigner(){
   newDesigner=document.getElementById("newDesigner").value;
   console.log(newDesigner);
   document.getElementById("newDesigner").value=null;
-}
-
-function showSection(section){
-  document.getElementById(section).style.visibility = "visible";
 }
