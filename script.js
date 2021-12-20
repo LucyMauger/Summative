@@ -137,6 +137,10 @@ d3.csv('LeadingBrands2020.csv').then(function (datapoints) {
   );
 });
 
+/**
+ * Used to get user input from text field (newsletter)
+ * @returns {string} User email
+ */
 function newsletter () {
   let email = '';
   email = document.getElementById('newsletterEmail').value;
@@ -144,6 +148,10 @@ function newsletter () {
   document.getElementById('newsletterEmail').value = null;
 }
 
+/**
+ * Used to get user input from text field (suggestion for new designer)
+ * @returns {string} New designer suggestion
+ */
 function newDesigner () {
   const designerArray = ['Coco Chanel', 'Chanel', 'Christian Dior', 'Dior'];
   if (designerArray.indexOf(document.getElementById('newDesigner').value) !== -1) {
