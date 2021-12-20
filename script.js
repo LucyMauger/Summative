@@ -8,13 +8,13 @@ d3.csv("GoogleTrendsComparingDesigners.csv").then(function(data){
   const Westwood = [];
   const Chanel = [];
 
-  for (i = 0; i < datapoints.length; i++) {
-    date.push(datapoints[i].date)
-    Lagerfeld.push(datapoints[i].Lagerfeld)
-    McQueen.push(datapoints[i].McQueen)
-    Dior.push(datapoints[i].Dior)
-    Westwood.push(datapoints[i].Westwood)
-    Chanel.push(datapoints[i].Chanel)
+  for (i = 0; i < data.length; i++) {
+    date.push(data[i].date)
+    Lagerfeld.push(data[i].Lagerfeld)
+    McQueen.push(data[i].McQueen)
+    Dior.push(data[i].Dior)
+    Westwood.push(data[i].Westwood)
+    Chanel.push(data[i].Chanel)
   }
 
   console.log(date)
