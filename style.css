@@ -53,3 +53,7 @@ h1 {
 .input-box {
   max-width: 300px;
 }
+
+.hidden {
+  display: none;
+}

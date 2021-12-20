@@ -75,3 +75,7 @@ function newDesigner(){
   console.log(newDesigner);
   document.getElementById("newDesigner").value=null;
 }
+
+function showSection(section){
+  document.getElementById(section).style.visibility = "visible";
+}
