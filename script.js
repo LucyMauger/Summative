@@ -47,7 +47,7 @@ d3.csv("GoogleTrendsComparingDesigners.csv").then(function(datapoints){
       data: Westwood,
     },
     {
-      label: 'My First dataset',
+      label: 'Chanel',
       backgroundColor: 'rgb(116, 46, 53)',
       borderColor: 'rgb(116, 46, 53)',
       data: Chanel,
