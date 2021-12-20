@@ -73,7 +73,7 @@ d3.csv("GoogleTrendsComparingDesigners.csv").then(function(datapoints){
 
 });
 
-d3.csv("LeadingBrands2021.csv").then(function(datapoints){
+d3.csv("LeadingBrands2020.csv").then(function(datapoints){
   datapoints.forEach(d => {d.H=+d.Height;});
 
   const Brand = [];
@@ -88,6 +88,7 @@ d3.csv("LeadingBrands2021.csv").then(function(datapoints){
   const data = {
     labels: labels,
     datasets: [{
+      label: 'Top 15 Brands by Value in 2020 ($b)',
       backgroundColor: 'rgb(116, 46, 53)',
       borderColor: 'rgb(116, 46, 53)',
       data: Value,
@@ -124,7 +125,12 @@ function newsletter(){
   document.getElementById("newsletterEmail").value=null;
 }
 function newDesigner(){
-  newDesigner=document.getElementById("newDesigner").value;
-  console.log(newDesigner);
-  document.getElementById("newDesigner").value=null;
+  var designerArray = ["Coco Chanel","Chanel","Christian Dior","Dior"]
+  if designerArray.indexOf(newDesigner=document.getElementById("newDesigner").value) !== -1) {
+    alert("This designer is already on our website.")
+  } else {
+    newDesigner=document.getElementById("newDesigner").value;
+    console.log(newDesigner);
+    document.getElementById("newDesigner").value=null;
+  }
 }

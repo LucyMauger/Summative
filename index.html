@@ -53,10 +53,10 @@
       </div>
 
     <!--GRAPH SECTION-->
-      <section id="Graph" class="p-5">
+      <section id="Graph" class="p-5 text-center">
         <h2 class="p-2">COMPARING DESIGNERS</h2>
-        <p>Below are a collection of graphs comparing the popularity of designers on Google over time.</p>
-        <canvas id="GoogleChart"></canvas>
+        <p>Below are a collection of graphs comparing the popularity of designers on Google over the last five years, using data from Google Trends. Clicking a designer's name will toggle their data, allowing you to compare different designers directly.</p>
+        <canvas width="200" height="200" id="GoogleChart"></canvas>
       </section>
       
     <!--CHRISTIAN DIOR-->
@@ -209,7 +209,21 @@
                 <div class="col-md align-items-center">
                   <img src="https://cdn5.iguzzini.com/getmedia/da633ba2-10e2-43f2-9694-92a6b044346f/chanel" class="img-fluid designer-img" alt="">
                 </div>
-                <canvas id="BrandValueGraph"></canvas>
+                <p>Even today, Chanel's brand was fifth in the world based on its value in 2021. </p>
+                <canvas width="200" height="200" id="BrandValueGraph"></canvas>
+              </div>
+            </div>
+
+            <!--Graph-->
+            <div class="container-fluid" id="CChanel-Graph">
+              <div class="row">
+                <div class="col-md text-justify p-5">
+                  <canvas id="BrandValueGraph"></canvas>
+                </div>
+                <div class="col-md align-items-center">
+                  <p>Even today, Chanel's brand was thirteenth in the world based on its value in 2020 (calculated by FashionUnited) of $9.1b.</p>
+                  <a href="https://fashionunited.com/i/most-valuable-fashion-brands/" class="btn btn-outline-dark btn-md">Graph data source</a>
+                </div>
               </div>
             </div>
           </div>
