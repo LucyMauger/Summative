@@ -1,5 +1,6 @@
-d3.csv("GoogleTrendsComparingDesigners.csv").then(function(datapoints){
-  datapoints.forEach(d => {d.H=+d.Height;});
+/* eslint-disable block-spacing */
+d3.csv('GoogleTrendsComparingDesigners.csv').then(function (datapoints) {
+  datapoints.forEach(d => {d.H = +d.Height;});
 
   const Date = [];
   const Dior = [];
@@ -9,12 +10,12 @@ d3.csv("GoogleTrendsComparingDesigners.csv").then(function(datapoints){
   const Versace = [];
 
   for (i = 0; i < datapoints.length; i++) {
-    Date.push(datapoints[i].Date)
-    Dior.push(datapoints[i].Dior)
-    Chanel.push(datapoints[i].Chanel)
-    McQueen.push(datapoints[i].McQueen)
-    McCartney.push(datapoints[i].McCartney)
-    Versace.push(datapoints[i].Versace)
+    Date.push(datapoints[i].Date);
+    Dior.push(datapoints[i].Dior);
+    Chanel.push(datapoints[i].Chanel);
+    McQueen.push(datapoints[i].McQueen);
+    McCartney.push(datapoints[i].McCartney);
+    Versace.push(datapoints[i].Versace);
   }
 
   const labels = Date;
@@ -24,31 +25,31 @@ d3.csv("GoogleTrendsComparingDesigners.csv").then(function(datapoints){
       label: 'Dior',
       backgroundColor: 'rgb(77, 64, 65)',
       borderColor: 'rgb(77, 64, 65)',
-      data: Dior,
+      data: Dior
     },
     {
       label: 'Chanel',
       backgroundColor: 'rgb(187, 167, 169)',
       borderColor: 'rgb(187, 167, 169)',
-      data: Chanel,
+      data: Chanel
     },
     {
       label: 'McQueen',
       backgroundColor: 'rgb(226, 161, 168)',
       borderColor: 'rgb(226, 161, 168)',
-      data: McQueen,
+      data: McQueen
     },
     {
       label: 'McCartney',
       backgroundColor: 'rgb(56, 35, 37)',
       borderColor: 'rgb(56, 35, 37)',
-      data: McCartney,
+      data: McCartney
     },
     {
       label: 'Versace',
       backgroundColor: 'rgb(116, 46, 53)',
       borderColor: 'rgb(116, 46, 53)',
-      data: Versace,
+      data: Versace
     }]
   };
 
@@ -57,7 +58,7 @@ d3.csv("GoogleTrendsComparingDesigners.csv").then(function(datapoints){
     interaction: {
       intersect: false
     },
-    radius: 0,
+    radius: 0
   };
 
   const config = {
@@ -70,18 +71,17 @@ d3.csv("GoogleTrendsComparingDesigners.csv").then(function(datapoints){
     document.getElementById('GoogleChart'),
     config
   );
-
 });
 
-d3.csv("LeadingBrands2020.csv").then(function(datapoints){
-  datapoints.forEach(d => {d.H=+d.Height;});
+d3.csv('LeadingBrands2020.csv').then(function (datapoints) {
+  datapoints.forEach(d => {d.H = +d.Height;});
 
   const Brand = [];
   const Value = [];
 
   for (i = 0; i < datapoints.length; i++) {
-    Brand.push(datapoints[i].Brand)
-    Value.push(datapoints[i].Value)
+    Brand.push(datapoints[i].Brand);
+    Value.push(datapoints[i].Value);
   }
 
   const labels = Brand;
@@ -91,7 +91,7 @@ d3.csv("LeadingBrands2020.csv").then(function(datapoints){
       label: 'Top 15 Brands by Value in 2020 ($b)',
       backgroundColor: 'rgb(116, 46, 53)',
       borderColor: 'rgb(116, 46, 53)',
-      data: Value,
+      data: Value
     }]
   };
 
@@ -102,35 +102,35 @@ d3.csv("LeadingBrands2020.csv").then(function(datapoints){
       responsive: true,
       plugins: {
         legend: {
-          position: 'top',
+          position: 'top'
         },
         title: {
           display: true,
           text: 'Leading Apparel Brands of 2021'
         }
       }
-    },
+    }
   };
 
   const myChart = new Chart(
     document.getElementById('BrandValueGraph'),
     config
   );
-
 });
 
-function newsletter(){
-  email=document.getElementById("newsletterEmail").value;
+function newsletter () {
+  email = document.getElementById('newsletterEmail').value;
   console.log(email);
-  document.getElementById("newsletterEmail").value=null;
+  document.getElementById('newsletterEmail').value = null;
 }
-function newDesigner(){
-  var designerArray = ["Coco Chanel","Chanel","Christian Dior","Dior"]
-  if (designerArray.indexOf(newDesigner=document.getElementById("newDesigner").value) !== -1) {
-    alert("This designer is already on our website.")
+
+function newDesigner () {
+  const designerArray = ['Coco Chanel', 'Chanel', 'Christian Dior', 'Dior'];
+  if (designerArray.indexOf(document.getElementById('newDesigner').value) !== -1) {
+    alert('This designer is already on our website.');
   } else {
-    newDesigner=document.getElementById("newDesigner").value;
-    console.log(newDesigner);
-    document.getElementById("newDesigner").value=null;
+    newSuggestion = document.getElementById('newDesigner').value;
+    console.log(newSuggestion);
+    document.getElementById('newDesigner').value = null;
   }
 }
