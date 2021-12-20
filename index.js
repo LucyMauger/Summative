@@ -1,12 +1,25 @@
 d3.csv("GoogleTrendsComparingDesigners.csv").then(function(data){
   data.forEach(d => {d.H=+d.Height;});
   console.log(data)
-  dataArray = data
+  const date = [];
+  const Lagerfeld = [];
+  const McQueen = [];
+  const Dior = [];
+  const Westwood = [];
+  const Chanel = [];
+
+  for (i = 0; i < datapoints.length; i++) {
+    date.push(datapoints[i].date)
+    Lagerfeld.push(datapoints[i].Lagerfeld)
+    McQueen.push(datapoints[i].McQueen)
+    Dior.push(datapoints[i].Dior)
+    Westwood.push(datapoints[i].Westwood)
+    Chanel.push(datapoints[i].Chanel)
+  }
+
+  console.log(date)
+
 });
-
-const arrayColumn = (arr, n) => arr.map(x => x[n]);
-
-dateColumn = arrayColumn(dataArray, 0));
 
 const labels = [
   'January',
