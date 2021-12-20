@@ -126,7 +126,7 @@ function newsletter(){
 }
 function newDesigner(){
   var designerArray = ["Coco Chanel","Chanel","Christian Dior","Dior"]
-  if designerArray.indexOf(newDesigner=document.getElementById("newDesigner").value) !== -1) {
+  if (designerArray.indexOf(newDesigner=document.getElementById("newDesigner").value) !== -1) {
     alert("This designer is already on our website.")
   } else {
     newDesigner=document.getElementById("newDesigner").value;
