@@ -66,14 +66,13 @@
           <div>
             <h1 class="text-center p-2">CHRISTIAN DIOR</h1>
             <div class="text-center">
-              <button onclick="showSection('CDior-About')" class="btn btn-outline-light btn-sm" type="button">About</button>
-              <button onclick="showSection('CDior-Video')" class="btn btn-outline-light btn-sm" type="button">Video</button>
-              <button onclick="showSection('CDior-Collections')" class="btn btn-outline-light btn-sm" type="button">Collections</button>
-
+              <a role="button" href="#CDior-About" class="btn btn-outline-light btn-sm">About</a>
+              <a role="button" href="#CDior-Video" class="btn btn-outline-light btn-sm">Video</a>
+              <a role="button" href="#CDior-Collections" class="btn btn-outline-light btn-sm">Collections</a>
             </div>
 
             <!--About-->
-            <div class="container-fluid hidden" id="CDior-About">
+            <div class="container-fluid" id="CDior-About">
               <div class="row">
                 <div class="col-md text-justify p-5">
                   <blockquote class="blockquote">
@@ -93,7 +92,7 @@
         </div>
 
         <!--Video and Accordian (using Bootsrtrap accordian)-->
-        <div class="container-fluid bg-light text-light hidden" id="CDior-Video"></div>
+        <div class="container-fluid bg-light text-light" id="CDior-Video"></div>
           <div class="container-fluid">
             <div class="row">
               <div class="col-md ">
@@ -140,7 +139,7 @@
         </div> 
 
         <!--Image Cards with Description and Buttons (using Bootsrtrap image cards)-->
-        <div class="container-fluid section-bg-dark text-light p-5 hidden" id="CDior-Collections">
+        <div class="container-fluid section-bg-dark text-light p-5" id="CDior-Collections">
           <h2 class="text-center p-4">COLLECTIONS BY HOUSE OF DIOR</h2>          
           <div class="row">
             <div class="col-md ">

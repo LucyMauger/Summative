@@ -58,6 +58,14 @@ d3.csv("GoogleTrendsComparingDesigners.csv").then(function(datapoints){
     options: {}
   };
 
+  const genericOptions = {
+    fill: false,
+    interaction: {
+      intersect: false
+    },
+    radius: 0,
+  };
+
   const myChart = new Chart(
     document.getElementById('myChart'),
     config
