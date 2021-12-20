@@ -1,6 +1,6 @@
 d3.csv("GoogleTrendsComparingDesigners.csv").then(function(datapoints){
   datapoints.forEach(d => {d.H=+d.Height;});
-  console.log(datapoints)
+
   const date = [];
   const Lagerfeld = [];
   const McQueen = [];
@@ -16,8 +16,6 @@ d3.csv("GoogleTrendsComparingDesigners.csv").then(function(datapoints){
     Westwood.push(datapoints[i].Westwood)
     Chanel.push(datapoints[i].Chanel)
   }
-
-  console.log(date)
 
   const labels = date;
   const data = {
@@ -76,4 +74,49 @@ function newDesigner(){
   newDesigner=document.getElementById("newDesigner").value;
   console.log(newDesigner);
   document.getElementById("newDesigner").value=null;
+}
+
+function singleGraph(designerName){
+  d3.csv("GoogleTrendsComparingDesigners.csv").then(function(datapoints){
+    datapoints.forEach(d => {d.H=+d.Height;});
+  
+    const date = [];
+    const Lagerfeld = [];
+    const McQueen = [];
+    const Dior = [];
+    const Westwood = [];
+    const Chanel = [];
+  
+    for (i = 0; i < datapoints.length; i++) {
+      date.push(datapoints[i].date)
+      Lagerfeld.push(datapoints[i].Lagerfeld)
+      McQueen.push(datapoints[i].McQueen)
+      Dior.push(datapoints[i].Dior)
+      Westwood.push(datapoints[i].Westwood)
+      Chanel.push(datapoints[i].Chanel)
+    }
+  
+    const labels = date;
+    const data = {
+      labels: labels,
+      datasets: [{
+        label: designerName,
+        backgroundColor: 'rgb(77, 64, 65)',
+        borderColor: 'rgb(77, 64, 65)',
+        data: designerName,
+      }]
+    };
+  
+    const config = {
+      type: 'line',
+      data: data,
+      options: {}
+    };
+  
+    const myChart = new Chart(
+      document.getElementById(designerName),
+      config
+    );
+  
+  });
 }
