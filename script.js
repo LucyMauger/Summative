@@ -67,3 +67,13 @@ d3.csv("GoogleTrendsComparingDesigners.csv").then(function(datapoints){
 
 });
 
+function newsletter(){
+  email=document.getElementById("newsletterEmail").value;
+  console.log(email);
+  document.getElementById("newsletterEmail").value=null;
+}
+function newDesigner(){
+  newDesigner=document.getElementById("newDesigner").value;
+  console.log(newDesigner);
+  document.getElementById("newDesigner").value=null;
+}
