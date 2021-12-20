@@ -4,6 +4,10 @@ d3.csv("GoogleTrendsComparingDesigners.csv").then(function(data){
   dataArray = data
 });
 
+const arrayColumn = (arr, n) => arr.map(x => x[n]);
+
+dateColumn = arrayColumn(dataArray, 0));
+
 const labels = [
   'January',
   'February',
