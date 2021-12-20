@@ -9,7 +9,7 @@ d3.csv("GoogleTrendsComparingDesigners.csv").then(function(datapoints){
   const Versace = [];
 
   for (i = 0; i < datapoints.length; i++) {
-    Date.push(datapoints[i].date)
+    Date.push(datapoints[i].Date)
     Dior.push(datapoints[i].Dior)
     Chanel.push(datapoints[i].Chanel)
     McQueen.push(datapoints[i].McQueen)
