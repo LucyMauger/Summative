@@ -4,7 +4,7 @@ Programming Gold Summative Assignment 1: Client-Side Scripting
 EXECUTION INSTRUCTIONS: 
 
 Open the "index.html" file. 
-A local server may need to be run for the data visualisations to work.
+A local server needs to be run for the data visualisations to work.
 
 
 
