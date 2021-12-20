@@ -120,3 +120,5 @@ function singleGraph(designerName){
   
   });
 }
+
+singleGraph(Dior)
